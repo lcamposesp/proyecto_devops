@@ -3,9 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                sh 'java -version'
-                sh ''
-                sh 'pip install -U pytest'
+                sh 'python3 -V'
                 echo 'Building'
             }
         }
