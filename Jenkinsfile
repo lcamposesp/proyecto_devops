@@ -1,12 +1,10 @@
 pipeline{
-    agent{
-        docker{image 'python:3'}
-    }
+    agent{ dockerfile true}
     stages{
         stage('Build'){
             steps{
-                sh 'python -V'
-                sh 'apt install python-pip'
+                sh 'java -version'
+                sh ''
                 sh 'pip install -U pytest'
                 echo 'Building'
             }
