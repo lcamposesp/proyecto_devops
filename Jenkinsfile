@@ -4,7 +4,7 @@ pipeline{
         stage('Build'){
             steps{
                 sh 'python -V'
-                sh 'apt-install python-pip'
+                sh 'apt install python-pip'
                 sh 'pip install -U pytest'
                 echo 'Building'
             }
