@@ -19,7 +19,7 @@ pipeline{
         }
         stage('Finalizando'){
             steps{
-                sh './end.sh'
+                echo 'probando'
             }
         }
         stage('Deployment'){
