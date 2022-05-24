@@ -17,10 +17,17 @@ pipeline{
                 echo 'Integration'
             }
         }
+        stage('Finalizando'){
+            steps{
+                sh './end.sh'
+            }
+        }
         stage('Deployment'){
             steps{
                 echo 'Deployment'
+
             }
+        
         }
     }
 }
