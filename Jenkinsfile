@@ -17,10 +17,18 @@ pipeline{
                 echo 'Integration'
             }
         }
+        stage('Finalizando'){
+            steps{
+                echo 'probando'
+                echo 'agregando para el PR'
+            }
+        }
         stage('Deployment'){
             steps{
                 echo 'Deployment'
+
             }
+        
         }
     }
 }
