@@ -6,7 +6,7 @@ pipeline{
                 sh 'python3 -V'
                 echo 'Building'
                 sh 'pip3 -V'
-                sh 'pip install flask'
+                sh 'pip3 install flask'
             }
         }
         stage('Unit tests'){
