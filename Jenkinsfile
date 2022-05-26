@@ -12,6 +12,7 @@ pipeline{
         stage('Unit tests'){
             steps{
                 echo 'Running unit tests'
+                sh 'python hello.py'
             }
         }
         stage('Integration tests'){
